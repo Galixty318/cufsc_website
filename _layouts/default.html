@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}" />
+    <link rel="stylesheet" href="/assets/style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="/">Cornell University Figure Skating Club</a>
+
+        <input id="nav-toggle" class="nav-toggle" type="checkbox" />
+        <label for="nav-toggle" class="nav-btn" aria-label="Toggle navigation">☰</label>
+
+        <nav class="nav">
+          <a href="/">Home</a>
+          <a href="/about/">About</a>
+          <a href="/prospective-skaters/">Prospective Skaters</a>
+          <a href="/officers/">Officers</a>
+          <a href="/competitions/">Competitions</a>
+          <a href="/team-gallery/">Team Gallery</a>
+          <a href="/alumni/">Alumni</a>
+          <a href="/contact/">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap content">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>This organization is a registered student organization of Cornell University.</p>
+      </div>
+    </footer>
+  </body>
+</html>
